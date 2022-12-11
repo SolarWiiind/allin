@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./index.css";
 
-export let Menu = () => {
+export let MenuMain = () => {
   return (
     <ul className="ul">
       <li className="logo">Logo</li>

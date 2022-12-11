@@ -1,8 +1,13 @@
 import React from 'react'
+import { Header } from './Header'
+import { Home } from './Home'
 import style from './index.module.css'
 
 export const Page1 = () => {
   return (
-    <div>index</div>
+    <div className={style.page1}>
+      <Header />
+      <Home />
+    </div>
   )
 }

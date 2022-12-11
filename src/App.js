@@ -17,7 +17,8 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <HeaderMain />
-        <Routes>
+        <Routes> 
+          {/* <Switch></Switch> routes phoxaren*/}
           <Route path="/" element={<Page1 />} />
           <Route path="/page1" element={<Page1 />} />
           <Route path="/page2" element={<Page2 />} />
