@@ -1,8 +1,6 @@
 .header {
   width: 100%;
-  height: 180px;
-  /* background: rgb(211 229 254); */
-  border: solid;
+  height: auto;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-around;
@@ -11,7 +9,7 @@
 .headerTop{
   width: 100%;
   height: 100px;
-  border: 1px dotted blue;
+  margin-bottom: 10px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -21,8 +19,15 @@
   font-size: 40px;
   font-weight: 500;
 }
+.div3{
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
 .p1{
-  font-size: 16px;
+  font-size: 20px;
   font-style: italic;
   font-weight: 200;
 }
@@ -34,3 +39,15 @@
   font-size: 16px;
   font-weight: 400;
 }
+@media screen and (max-width: 780px ) {
+  .headerTop{
+    height: auto;
+    flex-flow: column wrap;
+  }
+  .div3{
+    width: 90%;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+}
+  

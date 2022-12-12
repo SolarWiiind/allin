@@ -1,0 +1,35 @@
+.section {
+  width: 100%;
+  height: auto;
+  margin: 50px 0;
+  background-color: white;
+}
+.main {
+  width: 60%;
+  height: auto;
+  margin: 100px auto;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.p1 {
+  /* height: 40px; */
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 200;
+  color: lightslategray;
+}
+.p2 {
+  /* height: 60px; */
+  margin: 20px 0 30px;
+  font-size: 32px;
+  font-weight: bold;
+}
+.p3 {
+  height: auto;
+  font-size: 16px;
+  color: lightslategray;
+}
