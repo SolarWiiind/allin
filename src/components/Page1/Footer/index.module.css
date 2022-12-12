@@ -1,7 +1,7 @@
 .main{
     width: 100%;
     height: auto;
-    margin: 30px;
+    margin: 30px auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -15,6 +15,7 @@
     width: 40%;
   }
   .div3{
+    width: auto;
     height: 40%;
     display: flex;
     flex-flow: column wrap;
