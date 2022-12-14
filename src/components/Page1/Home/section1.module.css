@@ -47,12 +47,11 @@
   align-items: center;
 }
 .p21 {
-  width: 70%;
+  width: 75%;
   height: 40px;
   padding: 10px 0;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 100;
-  letter-spacing: 2px;
   color: white;
   border-bottom: 1px solid lightgray;
 }
@@ -68,10 +67,11 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+  align-items: center;
 }
 .div22map {
   width: 30%;
-  height: 550px;
+  height: 600px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -79,14 +79,15 @@
   justify-content: space-evenly;
 }
 .img {
-  width: 180px;
+  width: 80%;
 }
 .title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   text-align: center;
 }
 .info {
+  height: 200px;
   padding: 10px;
   font-size: 14px;
   font-weight: 100;
@@ -102,6 +103,42 @@
   background-color: rgb(156, 81, 156);
   border: none;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 14px;
   cursor: pointer;
+}
+@media screen and (max-width: 780px) {
+  .section {
+    margin: 20px 0;
+  }
+  .main {
+    width: 100%;
+  }
+  .div1 {
+    margin: 10px 0;
+  }
+  .p1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  .p2 {
+    font-size: 20px;
+  }
+  .div2 {
+flex-direction: column;
+  }
+  .div21 {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .p21 {
+    height: auto;
+  }
+  .div22 {
+    width: 100%;
+    margin-top: 20px;
+  }
 }

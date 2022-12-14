@@ -3,7 +3,7 @@
   height: auto;
 }
 .main {
-  width: 70%;
+  width: 80%;
   height: auto;
   margin: 50px auto;
   padding: 50px;
@@ -18,7 +18,7 @@
 }
 .div2{
   width: 60%;
-  height: 700px;
+  height: auto;
   padding: 20px;
 }
 .p1{
@@ -67,4 +67,31 @@
   padding: 50px 10px;
   top: 50%;
   transform: translateY(-50%);
+}
+@media screen and (max-width: 780px) {
+  .main {
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    flex-direction: column;
+  }
+  .p1{
+    font-size: 14px;
+  }
+  .p2, .p3{
+    font-size: 18px;
+  }
+  .line{
+    width: 100%;
+  }
+  .p4{
+    font-size: 12px;
+  }
+  .ul{
+    padding: 0 40px;
+    font-size: 12px;
+  }
+  .btn{
+    width: 50%;
+  }
 }
