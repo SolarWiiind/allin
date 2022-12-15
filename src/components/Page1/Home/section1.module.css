@@ -71,18 +71,19 @@
 }
 .div22map {
   width: 30%;
-  height: 600px;
+  height: 650px;
+  padding: 10px;
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 }
-.img {
-  width: 80%;
-}
+/* .img {
+  width: 10%;
+} */
 .title {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   text-align: center;
 }
@@ -105,6 +106,16 @@
   border-radius: 10px;
   font-size: 14px;
   cursor: pointer;
+}
+.catalogLink{
+  display: flex;
+  flex-direction: row;
+}
+.catalogLink li{
+  list-style: none;
+  font-size: 20px;
+  font-weight: 100;
+  text-decoration: underline;
 }
 @media screen and (max-width: 780px) {
   .section {

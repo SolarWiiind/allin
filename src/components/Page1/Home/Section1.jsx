@@ -1,3 +1,4 @@
+import { Modals } from "./Modal";
 import style from "./section1.module.css";
 
 const catalog = [
@@ -5,9 +6,12 @@ const catalog = [
     id: 1,
     img: "https://157008.lp.tobiz.net/img/400x560/1b02e22a43d8b716637ea6048cbaf5a6.png",
     title: "Цепочка 11745704",
-    info: "Подвеска с барочным жемчугом на цепочке из ювелирного сплава в позолоте, барочный жемчуг преображает и уносит",
+    info: "Подвеска с барочным жемчугом на цепочке из ювелирного сплава в позолоте, барочный жемчуг преображает и уносит. А цепочки в позолоте дополняют, играют на контрасте, привнося современность и особенный стиль. цепи из ювелирного сплава в гальваническом покрытии золотом. Гипоаллергенная фурнитура.",
     price: "1990.00 руб.",
     bag: "В корзину",
+    home: "Главная",
+    catalog: "Каталог товаров",
+    products: "Цепочки и колье",
   },
   {
     id: 2,
@@ -16,6 +20,9 @@ const catalog = [
     info: "Оригинальная брошь, по невероятно приятной цене, размер 8х4 см, вес броши 15 гр",
     price: "790.00 руб.",
     bag: "В корзину",
+    home: "Главная",
+    catalog: "Каталог товаров",
+    products: "Броши",
   },
   {
     id: 3,
@@ -24,9 +31,17 @@ const catalog = [
     info: "Ювелирный сплав в гальваническом покрытии золотом, барочный жемчуг и гипоаллергенная фурнитура высокого качества",
     price: "1810.00 руб.",
     bag: "В корзину",
+    home: "Главная",
+    catalog: "Каталог товаров",
+    products: "Браслеты",
   },
 ];
 
+// let linkmap = cataloglink.map( (el) => {
+//   return(
+
+//   )
+// })
 export let Section1 = () => {
   return (
     <div className={style.section}>
@@ -47,9 +62,20 @@ export let Section1 = () => {
             {catalog.map((element) => {
               return (
                 <div className={style.div22map} key={element.id}>
-                  <img src={element.img} alt="" className={style.img} />
+                  <Modals
+                    img={element.img}
+                    title={element.title}
+                    home={element.home}
+                    catalog={element.catalog}
+                    products={element.products}
+                    price={element.price}
+                    bag={element.bag}
+                    info={element.info}
+                  />
+                  {/* <img src={element.img} alt="" className={style.img} /> */}
                   <p className={style.title}>{element.title}</p>
-                  <p className={style.info}>{element.info}</p>
+                  <p className={style.info}>{element.info.substring(0, 10)}</p>
+                  {/* //slice */}
                   <p className={style.price}>{element.price}</p>
                   <button className={style.btn}>{element.bag}</button>
                 </div>

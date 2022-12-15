@@ -14,11 +14,13 @@ export let Page2 = () => {
 
   return (
     <>
+    <div style={{width: "80%", border: "solid", margin: "50px"}}>
       <Button variant="" onClick={() => handleShow(true)}>
         <img src="https://www.shutterstock.com/image-photo/red-car-260nw-197514563.jpg" />
       </Button>
+      <div style={{width: "80%", border: "2px dotted red", margin: "50px"}}>
 
-      <Modal show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
+      <Modal show={show} fullscreen={fullscreen} onHide={() => setShow(false)} >
         <Modal.Header closeButton>
           <Modal.Title>car rendering</Modal.Title>
         </Modal.Header>
@@ -42,6 +44,8 @@ export let Page2 = () => {
           </div>
         </Modal.Body>
       </Modal>
+      </div>
+      </div>
     </>
   );
 };
