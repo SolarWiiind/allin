@@ -1,7 +1,12 @@
+.footer{
+  background-color: rgb(156, 81, 156);
+  color: aliceblue;
+}
 .main {
   width: 100%;
   height: auto;
-  margin: 30px auto;
+  padding: 30px;
+  /* margin: 30px auto 0; */
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;

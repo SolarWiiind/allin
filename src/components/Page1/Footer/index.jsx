@@ -3,7 +3,7 @@ import style from "./index.module.css";
 
 export let Footer = () => {
   return (
-    <div className={style.section}>
+    <div className={style.footer}>
       <div className={style.main}>
         <div className={style.div1}> My lologo</div>
         <div className={style.div2}>

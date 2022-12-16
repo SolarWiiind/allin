@@ -71,7 +71,7 @@
 }
 .div22map {
   width: 30%;
-  height: 650px;
+  height: auto;
   padding: 10px;
   background-color: white;
   display: flex;

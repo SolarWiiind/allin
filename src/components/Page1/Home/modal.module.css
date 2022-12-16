@@ -1,3 +1,6 @@
+.modal{
+  font-family: 'Montserrat Alternates', sans-serif;
+}
 .catalogLink{
   display: flex;
   flex-direction: row;
@@ -6,7 +9,67 @@
   list-style: none;
   font-size: 20px;
   font-weight: 100;
-  text-decoration: underline;
+  font-style: italic;
+  text-decoration: 1px underline;
+}
+.modalMain{
+  width: 80%;
+  margin: 10px auto;
+}
+.div1{
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.div12{
+  width: 50%;
+}
+.p1, .p3{
+  font-size: 30px;
+  font-weight: bold;
+}
+.p2, .p21, .p22{
+  font-size: 20px;
+}
+.btn{
+  width: 200px;
+  height: 60px;
+  background-color: thistle;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+}
+.btn:hover{
+  background-color: rgb(156, 81, 156);
+}
+.div21{
+  display: flex;
+  flex-direction: row;
+}
+.div21text{ 
+  width: 20%;
+  text-align: center;
+  border: 1px solid rgb(180, 180, 180);
+  border-bottom: none;
+  border-radius: 5px 5px 0 0;
+}
+.p21{
+  padding: 0 10px;
+}
+.div21empty{
+  width: 80%;
+  border-bottom:  1px solid rgb(180, 180, 180);
+}
+.div22{
+  padding: 50px;
+  border: 1px solid rgb(180, 180, 180);
+  border-top: none;
+  border-radius:  0 0 5px 5px;
+
 }
 @media screen and (max-width: 780px) {
  
