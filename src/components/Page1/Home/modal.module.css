@@ -36,7 +36,7 @@
   font-size: 20px;
 }
 .btn{
-  width: 200px;
+  /* width: 200px; */
   height: 60px;
   background-color: thistle;
   font-size: 18px;
@@ -70,6 +70,18 @@
   border-top: none;
   border-radius:  0 0 5px 5px;
 
+}
+.div11{
+  position: relative;
+  display: flex;
+}
+.imgPreviewSectionContainer {
+  display: none;
+}
+.div11:hover .imgPreviewSectionContainer {
+  display: block;
+  position: absolute;
+  left: 500px;
 }
 @media screen and (max-width: 780px) {
  

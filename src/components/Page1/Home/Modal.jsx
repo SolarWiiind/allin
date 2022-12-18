@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import ReactImageZoom from "react-image-zoom";
+import ReactDOM from "react-dom";
+import useImageZoom from "react-image-zoom-hook";
 import style from "./modal.module.css";
 
 export const Modals = ({
@@ -17,13 +18,53 @@ export const Modals = ({
 }) => {
   const [fullscreen, setFullscreen] = useState(true);
   const [show, setShow] = useState(false);
-  const zoomed = {
-    width: 300,
-    height: 600,
-    zoomPosition: "right",
-    zoomWidth: 100,
+
+  const imgHeight = 560;
+
+  const imgWidth = 400;
+
+  const lensHeight = 50;
+
+  const lensWidth = 50;
+
+  const previewLensHeight = 300;
+
+  const previewImg = img;
+
+  const {
+    moveLens,
+
+    imgDimesions,
+
+    lensDimensions,
+
+    previewLensDimensions,
+
+    previewImgDimensions,
+
+    imgContainerDimesions,
+
+    imgRefCallback,
+
+    meshRefCallback,
+
+    imagePreviewRefCallback,
+  } = useImageZoom({
+    imgHeight,
+
+    imgWidth,
+
+    lensHeight,
+
+    lensWidth,
+
+    previewLensHeight,
+
     img,
-  };
+
+    previewImg,
+  });
+
   function handleShow(breakpoint) {
     setFullscreen(breakpoint);
     setShow(true);
@@ -32,7 +73,7 @@ export const Modals = ({
     <div className={style.modal}>
       <Button
         style={{
-          width: "200px",
+          // width: "200px",
           padding: "0",
           overflow: "contain",
         }}
@@ -57,8 +98,47 @@ export const Modals = ({
           <div className={style.modalMain}>
             <div className={style.div1}>
               <div className={style.div11}>
-                {/* <img src={img} alt="" /> */}
-                <ReactImageZoom {...zoomed} />
+                <div
+                  className={style.imgMainContainer}
+                  onMouseMove={moveLens}
+                  style={{
+                    ...imgContainerDimesions,
+                  }}
+                >
+                  <div
+                    ref={meshRefCallback}
+                    className={style.mesh}
+                    style={{
+                      ...lensDimensions,
+                    }}
+                  />
+
+                  <img
+                    style={{
+                      ...imgDimesions,
+                    }}
+                    ref={imgRefCallback}
+                    alt="test"
+                    src={img}
+                  />
+                </div>
+
+                <div
+                  className={style.imgPreviewSectionContainer}
+                  style={{
+                    ...previewLensDimensions,
+                  }}
+                >
+                  <img
+                    ref={imagePreviewRefCallback}
+                    alt="test-preview"
+                    src={previewImg}
+                    style={{
+                      ...previewImgDimensions,
+                    }}
+                    className={style.imgPreviewSection}
+                  />
+                </div>
               </div>
               <div className={style.div12}>
                 <p className={style.p1}>{title}</p>

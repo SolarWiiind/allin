@@ -67,7 +67,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
 }
 .div22map {
   width: 30%;
@@ -83,6 +83,7 @@
   width: 10%;
 } */
 .title {
+  height: 40px;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
@@ -92,9 +93,10 @@
   padding: 10px;
   font-size: 14px;
   font-weight: 100;
+  overflow: hidden;
 }
 .price {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: bold;
 }
 .btn {

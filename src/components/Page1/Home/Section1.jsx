@@ -76,10 +76,8 @@ export let Section1 = () => {
                     infoShort={element.infoShort}
                     infoFull={element.infoFull}
                   />
-                  {/* <img src={element.img} alt="" className={style.img} /> */}
                   <p className={style.title}>{element.title}</p>
                   <p className={style.info}>{element.infoShort}</p>
-                  {/* //slice */}
                   <p className={style.price}>{element.price}</p>
                   <button className={style.btn}>{element.bag}</button>
                 </div>
